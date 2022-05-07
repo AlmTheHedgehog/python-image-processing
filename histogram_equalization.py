@@ -1,7 +1,7 @@
 from PIL import Image
 
 if __name__ == '__main__':
-    im_yoda = Image.open("AandDS/2lab/yoda.jpeg")
+    im_yoda = Image.open("yoda.jpeg")
     yoda_arr = list(im_yoda.getdata())
 
 
@@ -31,4 +31,4 @@ if __name__ == '__main__':
 
     im_yoda_eq = Image.new(im_yoda.mode, im_yoda.size)
     im_yoda_eq.putdata(yoda_arr_gray)
-    im_yoda_eq.save("AandDS/2lab/yoda_eq.jpg")
+    im_yoda_eq.save("yoda_eq.jpg")

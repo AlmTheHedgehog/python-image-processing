@@ -1,7 +1,7 @@
 from PIL import Image
 
 if __name__ == '__main__':
-    im_yoda = Image.open("AandDS/2lab/yoda.jpeg")
+    im_yoda = Image.open("yoda.jpeg")
     yoda_arr = list(im_yoda.getdata())
 
     answ = "3"
@@ -40,4 +40,4 @@ if __name__ == '__main__':
 
     im_yoda_binary = Image.new(im_yoda.mode, im_yoda.size)
     im_yoda_binary.putdata(yoda_arr_bin)
-    im_yoda_binary.save("AandDS/2lab/yoda_binary.jpg")
+    im_yoda_binary.save("yoda_binary.jpg")
